@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_default_avatar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/secondary_textSize" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="2017-06-11 08:30"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/smaller_textSize" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.vanniktech.emoji.EmojiTextView
+        android:id="@+id/tv_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="斯蒂芬斯蒂芬司法所地方阿萨德法斯蒂芬"
+        android:textColor="@color/gray_33"
+        android:textSize="@dimen/secondary_textSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/content_bg"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索的评论"
+                android:textColor="@color/gray_94"
+                android:textSize="@dimen/smaller_textSize" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="撒旦法斯蒂芬斯蒂芬阿萨德法斯蒂芬速读法斯蒂芬斯蒂芬阿三的发生"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/secondary_textSize" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_horizontal" />
+</LinearLayout>

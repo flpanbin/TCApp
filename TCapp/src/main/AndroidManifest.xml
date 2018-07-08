@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pb.myapplication"
+    android:versionCode="3"
+    android:versionName="1.2.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.tc.application.App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light"
+        tools:replace="android:theme,android:icon">
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="1f8e561c03f0a" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="fb4b0bce42406730fa5b9d27934480f6" />
+
+        <activity
+            android:name="com.tc.activity.WelcomeActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tc.activity.TclistTypeSelectedActivity" />
+        <activity android:name="com.tc.activity.ContentReleaseActivity" />
+        <activity android:name="com.tc.activity.TcContentDetailActivity" />
+        <activity android:name="com.tc.activity.LoginActivity" />
+        <activity android:name="com.tc.activity.RegisterActivity" />
+        <activity
+            android:name="com.tc.activity.SetUpActivity"
+            android:label="@string/title_activity_set_up" />
+        <activity
+            android:name="com.tc.activity.MyCollectActivity"
+            android:label="@string/title_activity_my_collect" />
+        <activity
+            android:name="com.tc.activity.MyConcernActivity"
+            android:label="@string/title_activity_my_concern" />
+        <activity
+            android:name="com.tc.activity.MyTcActivity"
+            android:label="@string/title_activity_my_tc" />
+        <activity
+            android:name="com.tc.activity.MyCommentActivity"
+            android:label="@string/title_activity_my_anser" />
+        <activity
+            android:name="com.tc.activity.MyInformationActivity"
+            android:label="@string/title_activity_my_information" />
+        <activity
+            android:name="com.tc.activity.ChangePhoneActivity"
+            android:label="@string/title_activity_change" />
+        <activity
+            android:name="com.tc.activity.ChangePasswordActivity"
+            android:label="@string/title_activity_change_code" />
+        <activity
+            android:name="com.tc.activity.HelpAppActivity"
+            android:label="@string/title_activity_help_app" />
+        <activity
+            android:name="com.tc.activity.SearchTcTargetActivity"
+            android:label="@string/title_activity_search_result" />
+        <activity android:name="com.tc.activity.SelectTypeActivity" />
+        <activity android:name="com.tc.activity.SelectTargetActivity" />
+        <activity android:name="com.tc.activity.TcContentAboutTargetActivity" />
+        <activity android:name="com.tc.activity.ReceivedCommentActivity" />
+        <activity android:name="com.tc.activity.ReceivedLikeActivity" />
+        <activity android:name="com.tc.activity.MessageActivity" />
+        <activity android:name="com.tc.activity.WebActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name="com.tc.activity.RecoverPasswordActivity" />
+        <activity android:name="com.tc.activity.AboutUsActivity" />
+        <activity android:name="com.tc.activity.SplashActivity" />
+        <activity android:name="com.tc.activity.TempActivity" />
+        <activity android:name="com.tc.activity.MyTopicActivity" />
+        <activity android:name="com.tc.activity.SystemMsgActivity" />
+        <activity android:name="com.tc.activity.ShareActivity" />
+
+        <service android:name="com.tc.service.IntentService" />
+        <service android:name="com.tc.service.DemoPushService" />
+
+        <receiver android:name="com.tc.receiver.NotificationBroadCastReceiver">
+            <intent-filter>
+                <action android:name="clicked" />
+                <action android:name="cancel" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.tc.MyFileProvider"
+            android:authorities="com.example.pb.myapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

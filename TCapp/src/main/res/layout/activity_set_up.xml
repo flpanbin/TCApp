@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tc.activity.SetUpActivity">
+
+
+    <include layout="@layout/header_layout"></include>
+
+
+    <include layout="@layout/divider_line_horizontal"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_change_phone"
+        style="@style/my_information_rl_style"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/set_up_tv_style"
+            android:text="更改手机号" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_right_arrow" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_horizontal"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_change_code"
+        style="@style/my_information_rl_style"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            style="@style/set_up_tv_style"
+            android:text="修改密码" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_right_arrow" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_horizontal"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_middle_margin" />
+
+    <include layout="@layout/divider_line_horizontal"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_clear_cache"
+        style="@style/my_information_rl_style"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            style="@style/set_up_tv_style"
+            android:text="清除缓存" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_right_arrow" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_horizontal"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        style="@style/my_information_rl_style"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            style="@style/set_up_tv_style"
+            android:text="关于" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_right_arrow" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_horizontal"></include>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_app_information"-->
+        <!--style="@style/my_information_rl_style"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--style="@style/set_up_tv_style"-->
+            <!--android:text="版本信息" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/icon_right_arrow" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<include layout="@layout/divider_line_horizontal"></include>-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_help"
+        style="@style/my_information_rl_style"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/set_up_tv_style"
+            android:text="帮助与反馈" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_right_arrow" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_horizontal"></include>
+
+    <RelativeLayout
+        style="@style/my_information_rl_style"
+        android:layout_gravity="center"
+        android:id="@+id/rl_agreement"
+        android:gravity="center">
+
+        <TextView
+            style="@style/set_up_tv_style"
+            android:text="用户协议" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_right_arrow" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_horizontal"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_middle_margin" />
+
+    <include layout="@layout/divider_line_horizontal"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_login_out"
+       android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_info_item"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            style="@style/set_up_tv_style"
+            android:text="退出当前账号" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_horizontal"></include>
+</LinearLayout>

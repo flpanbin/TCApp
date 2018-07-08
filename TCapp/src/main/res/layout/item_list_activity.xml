@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/banner_tcw" />
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@color/activity_one"-->
+        <!--android:padding="10dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_image"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:src="@drawable/icon_one" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="13dp"-->
+            <!--android:layout_toRightOf="@id/iv_image"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="活动名称"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/title_textSize" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_brief"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:text="活动简介"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/secondary_textSize" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_end_time"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:text="活动截至时间"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/smaller_textSize" />-->
+        <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+</LinearLayout>

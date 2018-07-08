@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <include layout="@layout/list_item_user_info" />
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_comment" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10dp"
+            android:minHeight="25dp"
+            android:textColor="@color/gray_33"
+            android:text="吐槽内容吐槽内容吐槽内容吐槽内容吐槽内容吐槽内容"
+            android:textSize="@dimen/secondary_textSize" />
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/tv_to_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_corner_common_gray_5dp"
+            android:padding="8dp"
+            android:text="回复@asd的评论：吐槽回复吐槽回复吐槽回复吐槽回复吐槽回复"
+            android:textSize="@dimen/secondary_textSize" />
+    </LinearLayout>
+
+
+</LinearLayout>

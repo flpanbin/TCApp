@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/divider_line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_ee"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/rl_editbar_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_reply_edittext"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.vanniktech.emoji.EmojiEditText
+                android:id="@+id/edt_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:imeOptions="actionSend"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="3"
+                android:hint="说点什么吧..."
+                android:minHeight="36dp"
+                android:textSize="@dimen/title_textSize" />
+
+            <ImageView
+                android:id="@+id/iv_emotion"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:clickable="true"
+                android:src="@drawable/icon_expression" />
+
+            <ImageView
+                android:id="@+id/iv_emotion_pressed"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:clickable="true"
+                android:src="@drawable/icon_expression_pressed"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="56dp"
+            android:layout_height="32dp"
+            android:background="@drawable/shape_bg_button_reply"
+            android:text="发送"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_horizontal" />
+
+</LinearLayout>

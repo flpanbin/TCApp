@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_qrcode" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描二维码，下载安装Big Mouth"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/secondary_textSize"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/iv_qrcode"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.即日起，每推荐一个新用户注册成功后，可领取1-10元红包一个！推荐用户越多，红包越大！\n2.红包领取方式：点击“设置”按钮进入帮助与反馈页面，填写支付宝帐号和新用户手机号（如：支付宝帐号：15012345678，新用户：13888888888），并提交成功，平台核实后即可收到现金红包。"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/secondary_textSize"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/text1"/>
+    </RelativeLayout>
+</LinearLayout>

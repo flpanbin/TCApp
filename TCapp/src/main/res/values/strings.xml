@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Big Mouth</string>
+    <string name="title_activity_about_me">About_me</string>
+    <string name="title_activity_set_up">SetUpActivity</string>
+    <string name="title_activity_my_collect">MyCollectActivity</string>
+    <string name="title_activity_my_concern">MyConcernActivity</string>
+    <string name="title_activity_my_tc">MyTcActivity</string>
+    <string name="title_activity_my_anser">MyAnserActivity</string>
+    <string name="title_activity_select_type">SelectTypeActivity</string>
+    <string name="title_activity_my_information">MyInformation</string>
+    <string name="title_activity_change">ChangeActivity</string>
+    <string name="title_activity_change_code">ChangeCode</string>
+    <string name="title_activity_help_app">HelpAppActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_tc_ranking">TcRankingActivity</string>
+    <string name="title_home">吐槽王</string>
+    <string name="title_dashboard">点赞党</string>
+    <string name="title_notifications">评论哥</string>
+</resources>

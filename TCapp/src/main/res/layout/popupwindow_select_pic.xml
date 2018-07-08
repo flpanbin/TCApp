@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_transparent">
+
+    <LinearLayout
+        android:id="@+id/layout_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_photograph"
+        style="@style/popupwindow_text"
+        android:text="拍照" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_dd" />
+
+    <TextView
+        android:id="@+id/tv_album"
+        style="@style/popupwindow_text"
+        android:text="从相册中选取" />
+    <include layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_left"
+        style="@style/popupwindow_text"
+        android:text="取消" />
+
+        <include layout="@layout/divider_line_horizontal"/>
+    </LinearLayout>
+</RelativeLayout>

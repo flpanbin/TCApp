@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="3dp"
+        android:textSize="@dimen/smaller_textSize"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/shape_corner_time"
+        android:text="12-10 08:56"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/shape_corner_common_white_10dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_textSize"
+            android:layout_gravity="center"
+            android:text="斯蒂芬哈撒发哈苏德发射点发as步伐开始的步伐克里斯蒂部分卡死都不能菲拉斯本年度flak上班地方阿萨德发表您塑料袋" />
+    </LinearLayout>
+</LinearLayout>

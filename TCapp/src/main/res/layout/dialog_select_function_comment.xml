@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_corner_common_white_10dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/dialog_item_style"
+        android:background="@drawable/shape_dialog_item_top"
+        android:text="选择" />
+
+    <include layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        style="@style/dialog_item_style"
+        android:text="删除" />
+
+    <TextView
+        android:id="@+id/tv_reply"
+        style="@style/dialog_item_style"
+        android:text="回复" />
+
+    <include
+        android:id="@+id/divider_reply"
+        layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_reply_anonymous"
+        style="@style/dialog_item_style"
+        android:text="匿名回复" />
+
+    <include
+        android:id="@+id/divider_reply_anonymous"
+        layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_source"
+        style="@style/dialog_item_style"
+        android:text="查看源主题"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/ll_divider"
+        layout="@layout/divider_line_horizontal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_report"
+        style="@style/dialog_item_style"
+        android:background="@drawable/selector_dialog_item_bottom"
+        android:text="举报" />
+</LinearLayout>

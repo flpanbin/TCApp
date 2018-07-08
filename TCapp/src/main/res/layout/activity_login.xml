@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner_login" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_login_logo"/>
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_login_edittext"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/icon_login_user"
+                style="@style/login_register_edt_icon_style" />
+
+            <EditText
+                android:id="@+id/edt_phone"
+                style="@style/login_hint_text_style"
+                android:hint="手机号" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/login_register_ly_style">
+
+            <ImageView
+                style="@style/login_register_edt_icon_style"
+                android:src="@drawable/icon_pwd" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                style="@style/login_hint_text_style"
+                android:hint="密码"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:text="登录"
+            style="@style/login_btn_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码？"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textSize" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新用户注册"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textSize" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_corner_common_white_10dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/dialog_item_style"
+        android:background="@drawable/shape_dialog_item_top"
+        android:text="选择举报类型" />
+
+    <include layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_divulge_privacy"
+        style="@style/dialog_item_style"
+        android:text="泄漏隐私" />
+
+    <include layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_personal_attack"
+        style="@style/dialog_item_style"
+        android:text="人身攻击" />
+
+    <include layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_obscenity"
+        style="@style/dialog_item_style"
+        android:text="淫秽色情" />
+
+    <include layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_adv"
+        style="@style/dialog_item_style"
+        android:text="垃圾广告" />
+
+    <include layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_false_information"
+        style="@style/dialog_item_style"
+        android:text="虚假信息" />
+
+    <include layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_llegal_information"
+        style="@style/dialog_item_style"
+        android:text="违法信息" />
+
+    <include layout="@layout/divider_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_other"
+        style="@style/dialog_item_style"
+        android:background="@drawable/selector_dialog_item_bottom"
+        android:text="其他" />
+</LinearLayout>

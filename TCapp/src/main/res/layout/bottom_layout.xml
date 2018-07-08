@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_square"
+        style="@style/bottom_ly_style">
+
+        <ImageView
+            android:id="@+id/iv_square"
+            style="@style/bottom_iv_style"
+            android:src="@drawable/icon_square" />
+
+        <TextView
+            android:id="@+id/tv_square"
+            style="@style/bottom_tv_style"
+            android:text="广场" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_activity"
+        style="@style/bottom_ly_style">
+
+        <ImageView
+            android:id="@+id/iv_activity"
+            style="@style/bottom_iv_style"
+            android:src="@drawable/icon_find" />
+
+        <TextView
+            android:id="@+id/tv_activity"
+            style="@style/bottom_tv_style"
+            android:text="发现" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:src="@drawable/icon_release"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_msg"
+        style="@style/bottom_ly_style">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_message"
+                style="@style/bottom_iv_style"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_message" />
+
+            <TextView
+                android:id="@+id/tv_dot_message"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_message"
+                android:background="@drawable/shape_red_dot"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_message"
+            style="@style/bottom_tv_style"
+            android:text="消息" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_me"
+        style="@style/bottom_ly_style">
+
+        <ImageView
+            android:id="@+id/iv_me"
+            style="@style/bottom_iv_style"
+            android:src="@drawable/icon_me" />
+
+        <TextView
+            android:id="@+id/tv_me"
+            style="@style/bottom_tv_style"
+            android:text="我的" />
+    </LinearLayout>
+
+</LinearLayout>

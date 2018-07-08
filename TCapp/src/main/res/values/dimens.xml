@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding_middle_margin">30dp</dimen>
+    <dimen name="top_search_bar_height">45dp</dimen>
+    <dimen name="title_textSize">18sp</dimen>
+    <dimen name="secondary_textSize">15sp</dimen>
+    <dimen name="smaller_textSize">12sp</dimen>
+    <dimen name="default_textSize">15sp</dimen>
+    <dimen name="nick_name_textSize">14sp</dimen>
+
+
+</resources>
